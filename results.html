@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimation Results | Ion Exchange Ltd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <span class="logo-icon">💧</span>
+        <div class="logo-text">
+          <h2>ION EXCHANGE</h2>
+          <p>Water Hardness & Product Estimator</p>
+        </div>
+      </div>
+      <a href="https://ionexchangeglobal.com/" target="_blank" class="nav-link">Visit Website ↗</a>
+    </div>
+  </header>
+
+  <!-- Main Results Page -->
+  <main class="main-container">
+    
+    <div class="intro-section">
+      <h1>Water Quality & Hardness Estimation Results</h1>
+      <p>Analysis and recommended <strong>INDION®</strong> solution based on your submitted water parameters.</p>
+    </div>
+
+    <!-- Centered Results Card -->
+    <div class="card result-center-card">
+      
+      <!-- Input Parameters Summary Bar -->
+      <div class="params-summary-bar">
+        <div class="param-item">
+          <span class="param-label">Source</span>
+          <strong id="summarySource">-</strong>
+        </div>
+        <div class="param-item">
+          <span class="param-label">TDS</span>
+          <strong id="summaryTds">-</strong>
+        </div>
+        <div class="param-item">
+          <span class="param-label">pH Level</span>
+          <strong id="summaryPh">-</strong>
+        </div>
+        <div class="param-item">
+          <span class="param-label">Daily Usage</span>
+          <strong id="summaryUsage">-</strong>
+        </div>
+      </div>
+
+      <!-- Water Hardness Category Banner -->
+      <div class="hardness-banner" id="hardnessBanner">
+        <div class="banner-icon" id="bannerIcon">🟡</div>
+        <div>
+          <span class="banner-sub">Water Classification</span>
+          <h2 id="hardnessCategoryText">Calculating...</h2>
+        </div>
+      </div>
+
+      <!-- Explanation Message -->
+      <div class="info-box">
+        <p id="waterExplanation">
+          Analyzing your water quality parameters...
+        </p>
+      </div>
+
+      <!-- Key Metrics Summary -->
+      <div class="summary-pills">
+        <div class="pill">
+          <span class="pill-title">Estimated Hardness</span>
+          <span class="pill-value" id="estimatedHardnessText">-</span>
+        </div>
+        <div class="pill">
+          <span class="pill-title">pH Condition</span>
+          <span class="pill-value" id="phConditionText">-</span>
+        </div>
+        <div class="pill">
+          <span class="pill-title">Resin Needed</span>
+          <span class="pill-value" id="resinNeededText">-</span>
+        </div>
+      </div>
+
+      <!-- Product Recommendation Box -->
+      <div class="product-box">
+        <span class="rec-badge">Recommended Ion Exchange Solution</span>
+        <h4 id="productTitle">INDION® Water Softener Series</h4>
+        <p id="productDesc">Loading recommended product details...</p>
+        <div class="product-features" id="productFeatures">
+          <span>✔ Protects geysers, showers & appliances from scaling</span>
+          <span>✔ Uses food-grade INDION® 225 Na high-capacity cation resin</span>
+          <span>✔ Simple salt (NaCl) regeneration for long service life</span>
+        </div>
+      </div>
+
+      <!-- Back to Form Button -->
+      <div class="action-row">
+        <a href="index.html" class="btn-back">
+          ← Calculate Again / Change Inputs
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Simple Reference Table -->
+    <div class="card guide-card">
+      <h3>📘 Water Hardness Reference Guide</h3>
+      <table class="simple-table">
+        <thead>
+          <tr>
+            <th>Hardness Range</th>
+            <th>Category</th>
+            <th>Impact</th>
+            <th>Recommended INDION Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>0 – 60 ppm</td>
+            <td><span class="tag soft">Soft</span></td>
+            <td>Ideal water, no limescale</td>
+            <td>No softener needed</td>
+          </tr>
+          <tr>
+            <td>61 – 120 ppm</td>
+            <td><span class="tag mod">Slightly Hard</span></td>
+            <td>Minor scaling over time</td>
+            <td>INDION EasySoft Domestic</td>
+          </tr>
+          <tr>
+            <td>121 – 180 ppm</td>
+            <td><span class="tag hard">Hard</span></td>
+            <td>Limescale on taps & appliances</td>
+            <td>INDION Water Softener Series</td>
+          </tr>
+          <tr>
+            <td>181+ ppm</td>
+            <td><span class="tag very-hard">Very Hard</span></td>
+            <td>Severe scale & pipe choking</td>
+            <td>INDION 225 Na Softener Plant</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>Mini Project created for <strong>Ion Exchange (India) Ltd</strong> • Powered by HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
